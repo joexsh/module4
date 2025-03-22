@@ -18,19 +18,19 @@
 
 
 
-// STEP 6: IIFE wrapper
+// STEP 6: 
 (function (window) {
-  // STEP 7: Create byeSpeaker object
+  // STEP 7: 
   var byeSpeaker = {};
 
-  // Private variable (not attached to byeSpeaker)
+  
   var speakWord = "Good Bye";
 
-  // STEP 8: Attach speak method to byeSpeaker
+  // STEP 8: 
   byeSpeaker.speak = function (name) {
     console.log(speakWord + " " + name);
   };
 
-  // STEP 9: Expose to global scope
+  // STEP 9: 
   window.byeSpeaker = byeSpeaker;
 })(window);

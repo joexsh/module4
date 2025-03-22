@@ -18,20 +18,20 @@
 
 
 
-// STEP 2: IIFE wrapper
+// STEP 2: 
 (function (window) {
-  // STEP 3: Create helloSpeaker object
+  // STEP 3: 
   var helloSpeaker = {};
 
-  // Private variable (not attached to helloSpeaker)
+  
   var speakWord = "Hello";
 
-  // STEP 4: Attach speak method to helloSpeaker
+  // STEP 4: 
   helloSpeaker.speak = function (name) {
     console.log(speakWord + " " + name);
   };
 
-  // STEP 5: Expose to global scope
+  // STEP 5: 
   window.helloSpeaker = helloSpeaker;
 })(window);
 
